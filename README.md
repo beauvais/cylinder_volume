@@ -20,3 +20,27 @@ This script returns the number of ccm<sup>3</sup>s in the cylinder as the variab
 ### print steps
 
 Through *find_volume* there are print() functions which are commented out. If a result does not look right, or in the case of an error, these will print each step in the process to show where the error might be.
+
+
+## TODO
+
+The reason for this script was to find the volume (in litres) of a stainless steel pot from its listed dimensions in centimetres. This is to find a large enough brew kettle.
+
+Several things that this script could become:
+
+* A larger package for identifying more specific home brewing elements:
+    * litres to pints
+    * loss of volume through evaporation
+    * size of pot to match target brew
+    * size of kegs
+    * number of bottles
+        * sizes of bottles (volume)
+        * number of bottlecaps (in bags)
+* A web application which takes requirements for a brew, and builds essential parts based on the requirements (with optionals)
+* Combined with a scraper or similar price-watching app which could alert when an item matching the scripts options comes online for sale:
+    * creates search terms:
+        * if boiler:
+            search = ["stock pot", "stainless steel stock pot", "brew kettle"]
+            search_sizes = [cylinder_volume + " litres", height + (radius*2)]
+    * searches amazon, ebay, and other sites accepting search terms
+    * returns matching URIs for listings and prices
