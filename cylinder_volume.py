@@ -1,4 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+'''
+A simple script to find the volume of a cylinder from two args: height and radius.
+'''
 
 import math
 
@@ -6,7 +9,9 @@ import math
 v = hπr2
 To find the volume of a cylinder, multiply its height by its radius squared
 find_volume will return an int or float value of the number of cubic centimetres and the
-float or interger in litres.
+float or integer in litres. You can call the function like so:
+
+print(find_volume(32, 18.25))
 
 5 cubic centimetres is 0.005 litres
 '''
@@ -24,6 +29,5 @@ def find_volume(height, radius):
     # print("cubic centimetres (cc) is " + str(cc))
     # print("volume in litres is " + str(litres))
 
+    return cc
     return litres
-
-print(find_volume(32, 18.25))
