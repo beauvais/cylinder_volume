@@ -2,12 +2,14 @@
 
 import math
 
-# v = hπr2
-# To find the volume of a cylinder, multiply its height by its radius squared
-# find_volume will return a float value of cubic centimetres and the converted
-# float in litres.
+'''
+v = hπr2
+To find the volume of a cylinder, multiply its height by its radius squared
+find_volume will return an int or float value of the number of cubic centimetres and the
+float or interger in litres.
 
-# 5 cubic centimetres is 0.005 litres
+5 cubic centimetres is 0.005 litres
+'''
 
 
 def find_volume(height, radius):
@@ -15,12 +17,12 @@ def find_volume(height, radius):
     rsq = math.pow(radius, 2)
     cc = height * pi * rsq
     litres = cc * .001
-    print("height is " + str(height))  # printing steps for sense-checking
-    print("π is " + str(pi))
-    print("radius is " + str(radius))
-    print("radius squared is " + str(rsq))
-    print("cubic centimetres (cc) is " + str(cc))
-    print("volume in litres is " + str(litres))
+    # print("height is " + str(height))  # printing steps for sense-checking
+    # print("π is " + str(pi))
+    # print("radius is " + str(radius))
+    # print("radius squared is " + str(rsq))
+    # print("cubic centimetres (cc) is " + str(cc))
+    # print("volume in litres is " + str(litres))
 
     return litres
 
